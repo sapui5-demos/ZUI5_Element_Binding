@@ -1,0 +1,22 @@
+<mvc:View xmlns:core="sap.ui.core"
+	xmlns:l="sap.ui.commons.layout"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.ui.commons"
+	controllerName="sap.training.view.Main"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	
+
+	<ComboBox change="onChange" items="{/data}">
+			<items>
+			    <core:ListItem text="{department}"/>
+			</items> 
+	</ComboBox>
+	
+	<ListBox id="myListBox" visibleItems="5"
+	          items="{employees}" minWidth="100px">
+			<items>
+			    <core:Item text="{name}"/>
+		    </items>		
+	</ListBox>
+	
+</mvc:View>
